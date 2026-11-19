@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
+from pathlib import Path
+
 
 # -----------------------------------------
 # PAGE SETUP
@@ -87,8 +89,10 @@ st.title("Carillon Library Viz: Region x Style")
 # -----------------------------------------
 # LOAD DATA
 # -----------------------------------------
-
-df = pd.read_csv("Processed_Carillon_Library.csv")
+BASE_DIR = Path(__file__).resolve().parent
+csv_path = BASE_DIR / "Processed_Carillon_Library.csv"
+df = pd.read_csv(csv_path)
+# df = pd.read_csv("Processed_Carillon_Library.csv")
 
 # Clean categorical columns
 for col in ["style", "region_sub", "region"]:

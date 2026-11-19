@@ -71,7 +71,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # TITLE -------------------------------------------
-st.title("Carillon Library Viz: Search by Region & Genre")
+st.title("Carillon Library Viz")
 
 
 # -----------------------------------------

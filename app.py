@@ -115,6 +115,14 @@ geo_column = {
     "Region": "region",
 }[geo_level]
 
+# Reset selection when geographic granularity changes
+
+if "previous_geo_level" not in st.session_state:
+    st.session_state.previous_geo_level = geo_level
+if st.session_state.previous_geo_level != geo_level:
+    st.session_state.previous_geo_level = geo_level
+    st.session_state.pop("heatmap", None)
+    
 if geo_column == "region_sub":
     heatmap_height = 1400
 else:

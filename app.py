@@ -170,7 +170,7 @@ selection = alt.selection_point(
 # -----------------------------------------
 
 sort_x = ["Unknown", "Hymn", "Traditional", "Classical", "Popular"]
-if geo_column == 'Subgenre':
+if geo_level == 'Subgenre':
     sort_x = [
         'Hymn',
         'Traditional',

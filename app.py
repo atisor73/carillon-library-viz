@@ -51,32 +51,26 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<style>
-    /* Compact selection information */
-    div[data-testid="stMarkdownContainer"] p {
-        margin-bottom: 0.15rem !important;
-        margin-top: 0.15rem !important;
+    <style>
+        /* Compact selection information */
+        div[data-testid="stMarkdownContainer"] p {
+            margin-bottom: 0.15rem !important;
+            margin-top: 0.15rem !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
+    div[data-testid="stAlert"] {
+        background-color: #f0e7e6;
+        color: #456590;
+        border: 0px solid #1565C0;
     }
-</style>
-""", unsafe_allow_html=True)
+    </style>
+    """, unsafe_allow_html=True)
 
-st.markdown("""
-<style>
-div[data-testid="stAlert"] {
-    background-color: #f0e7e6;
-    color: #456590;
-    border: 0px solid #1565C0;
-}
-</style>
-""", unsafe_allow_html=True)
-
-# Display github icon
-st.markdown("""
-<link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-""", unsafe_allow_html=True)
-
-
+# TITLE -------------------------------------------
 st.title("Carillon Library Viz: Search by Region & Genre")
 
 

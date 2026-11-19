@@ -75,14 +75,6 @@ st.markdown("""
 <link rel="stylesheet"
  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 """, unsafe_allow_html=True)
-st.markdown("""
-<a href="YOUR_GITHUB_REPOSITORY_URL" target="_blank"
-   style="position: fixed; top: 20px; right: 130px;
-          font-size: 24px; color: #444; text-decoration: none;">
-    <i class="fab fa-github"></i>
-</a>
-""", unsafe_allow_html=True)
-
 
 
 st.title("Carillon Library Viz: Region x Style")
